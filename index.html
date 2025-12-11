@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Record System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Employee Record & Management System</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#employees">Employees</a></li>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#salary">Salary</a></li>
+        <li><a href="#payment">Payments</a></li>
+        <li><a href="#advance">Advance</a></li>
+        <li><a href="#overtime">Overtime</a></li>
+    </ul>
+</nav>
+
+<!-- EMPLOYEE SECTION -->
+<section id="employees" class="section">
+    <h2>Employee Details</h2>
+
+    <form id="empForm">
+        <input type="text" id="empID" placeholder="Employee ID" required>
+        <input type="text" id="empName" placeholder="Employee Name" required>
+        <input type="text" id="empDes" placeholder="Designation" required>
+        <input type="text" id="empPhone" placeholder="Phone Number" required>
+        <input type="date" id="empJoin" required>
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <table id="empTable">
+        <tr>
+            <th>ID</th><th>Name</th><th>Designation</th><th>Phone</th><th>Join Date</th>
+        </tr>
+    </table>
+</section>
+
+<!-- ATTENDANCE -->
+<section id="attendance" class="section">
+    <h2>Attendance Record</h2>
+
+    <form id="attForm">
+        <input type="text" id="attName" placeholder="Employee Name" required>
+        <input type="date" id="attDate" required>
+        <input type="time" id="attIn" required>
+        <input type="time" id="attOut" required>
+        <button type="submit">Add Attendance</button>
+    </form>
+
+    <table id="attTable">
+        <tr>
+            <th>Employee</th><th>Date</th><th>Check-In</th><th>Check-Out</th>
+        </tr>
+    </table>
+</section>
+
+<!-- SALARY -->
+<section id="salary" class="section">
+    <h2>Salary Record</h2>
+
+    <form id="salForm">
+        <input type="text" id="salName" placeholder="Employee Name" required>
+        <input type="text" id="salMonth" placeholder="Month (e.g. Dec 2025)" required>
+        <input type="number" id="salBasic" placeholder="Basic Salary" required>
+        <input type="number" id="salOver" placeholder="Overtime Amount" required>
+        <button type="submit">Add Salary</button>
+    </form>
+
+<table id="salTable">
+  <thead>
+    <tr>
+      <th>Employee</th>
+      <th>Month</th>
+      <th>Basic Salary</th>
+      <th>OT Hours</th>
+      <th>OT Amount</th>
+      <th>Advance Deduction</th>
+      <th>Final Salary</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead></section>
+
+<!-- PAYMENT -->
+<section id="payment" class="section">
+    <h2>Payment History</h2>
+
+    <form id="payForm">
+        <input type="text" id="payName" placeholder="Employee Name" required>
+        <input type="date" id="payDate" required>
+        <input type="number" id="payAmount" placeholder="Amount" required>
+        <button type="submit">Add Payment</button>
+    </form>
+
+    <table id="payTable">
+        <tr>
+            <th>Employee</th><th>Date</th><th>Amount Paid</th>
+        </tr>
+    </table>
+</section>
+
+<!-- ADVANCE -->
+<section id="advance" class="section">
+    <h2>Advance Payment Record</h2>
+
+    <form id="advForm">
+        <input type="text" id="advName" placeholder="Employee Name" required>
+        <input type="date" id="advDate" required>
+        <input type="number" id="advAmount" placeholder="Advance Amount" required>
+        <button type="submit">Add Advance</button>
+    </form>
+
+    <table id="advTable">
+        <tr>
+            <th>Employee</th><th>Date</th><th>Advance Taken</th>
+        </tr>
+    </table>
+</section>
+
+<!-- OVERTIME -->
+<section id="overtime" class="section">
+    <h2>Overtime Record</h2>
+
+    <form id="otForm">
+        <input type="text" id="otName" placeholder="Employee Name" required>
+        <input type="date" id="otDate" required>
+        <input type="number" id="otHours" placeholder="Hours" required>
+        <input type="number" id="otAmount" placeholder="Amount" required>
+        <button type="submit">Add Overtime</button>
+    </form>
+
+    <table id="otTable">
+        <tr>
+            <th>Employee</th><th>Date</th><th>Hours</th><th>Amount</th>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p>© 2025 Employee Record System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
